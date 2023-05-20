@@ -9,6 +9,11 @@
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="style.css">
 
+  <!-- 
+  *defer so the script tag is read after reading the html file
+  *use type = module to be able to import json file -->
+  <script src="./main.js" defer type="module"></script>
+
 </head>
 <body>
 
@@ -22,9 +27,9 @@
     <div class="summary">
       <p class="heading2" >Summary</p>
       <div class="score-details" id="reaction">
-        <img src="./assets/images/icon-reaction.svg" alt="reaction-icon">
-        <p class="reaction">Reaction</p>
-        <p> <span class="score">80 </span> <span class="full-score">/100</span> </p>
+        <!-- <img src="./assets/images/icon-reaction.svg" alt="reaction-icon"> -->
+        <!-- <p class="reaction">Reaction</p> -->
+        <!-- <p> <span class="score">80 </span> <span class="full-score">/100</span> </p> -->
       </div>
       <div class="score-details" id="memory">
         <img src="./assets/images/icon-memory.svg" alt="reaction-icon">
@@ -42,7 +47,7 @@
         <p><span class="score">72</span>  <span class="full-score">/100</span> </p>
       </div>
 
-      <button id="btn-continue">Continue</button>
+      <button id="btn-continue" >Continue</button>
     </div>
   </div>
   
